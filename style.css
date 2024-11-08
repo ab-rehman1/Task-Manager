@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Faculty Glyphic", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 5vw;
+}
+
+.main-heading{
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    color: rgb(17, 85, 85);
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    height: 25%;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.4);
+    border-radius: .5vw;
+    padding: 2vw;
+    margin-bottom: 5vw;
+}
+
+.left-span{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input{
+    outline: none;
+    font-family: "Faculty Glyphic", sans-serif;
+    padding: .5vw 1vw;
+    border: 1px solid gray;
+    width: 80%;
+    color: black;
+    font-size: 1vw;
+    border-radius: .2vw;
+    transition: .3s;
+}
+
+.input:focus{
+    border-color: rgb(30, 151, 151);
+}
+
+.right-span{
+    width: 30%;
+}
+
+.right-span button{
+    font-size: 1vw;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid transparent;
+    padding: .5vw 1vw;
+    border-radius: .2vw;
+    font-family: "Faculty Glyphic", sans-serif;
+    background-color: lightseagreen;
+    transition: .4s;
+    color: white;
+}
+
+.right-span button:hover{
+    background-color: rgb(15, 95, 91);
+}
+
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.task-span{
+    width: 90%;
+    padding: .5vw 1vw;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.4);
+    color: rgb(51, 51, 51);
+    font-size: 1vw;
+}
+
+.task-action-span{
+    width: 10%;
+    padding: .5vw;
+}
+
+.task-action-span button{
+    outline: none;
+    padding: .5vw 1vw;
+    border: 1px solid transparent;
+    background-color: red;
+    color: white;
+    width: 100%;
+    transition: .3s;
+    font-size: 1vw;
+}
+
+.task-action-span button:hover{
+    background-color: rgb(163, 10, 10);
+}
+
+
+
+/* =======================================  900px  ======================================== */
+
+
+@media (min-width: 700px) and (max-width: 900px){
+
+    .main-heading{
+        font-size: 2.4vw;
+    }
+    .actions{
+        height: 20%;
+    }
+
+    .input{
+       font-size: 1.4vw;
+    }
+    .right-span button{
+        font-size: 1.4vw;
+    }
+    .task-span{
+        font-size: 1.4vw;
+    }
+    .task-action-span button{
+        font-size: 1.4vw;
+    }
+
+}
+
+
+/* =======================================  700px  ======================================== */
+
+
+@media (min-width: 500px) and (max-width: 700px){
+
+    .main-heading{
+        font-size: 3.4vw;
+    }
+    .actions{
+        height: 15%;
+    }
+
+    .input{
+       font-size: 1.8vw;
+    }
+    .right-span button{
+        font-size: 1.8vw;
+    }
+    .task-span{
+        font-size: 1.8vw;
+        width: 85%;
+    }
+    .task-action-span button{
+        font-size: 1.6vw;
+    }
+    .task-action-span{
+        width: 15%;
+    }
+
+}
+
+/* =======================================  500px  ======================================== */
+
+
+@media (min-width: 400px) and (max-width: 500px){
+
+    .main-heading{
+        font-size: 4.4vw;
+    }
+    .actions{
+        height: 10%;
+    }
+
+    .input{
+       font-size: 2.2vw;
+    }
+    .right-span button{
+        font-size: 2.2vw;
+    }
+    .task-span{
+        font-size: 2.2vw;
+        width: 80%;
+    }
+    .task-action-span button{
+        font-size: 2.2vw;
+    }
+    .task-action-span{
+        width: 20%;
+    }
+
+}
+
+
+
+/* =======================================  400px  ======================================== */
+
+
+@media (max-width: 400px){
+
+    .main-heading{
+        font-size: 5vw;
+    }
+    .actions{
+        height: 7%;
+        width: 80%;
+        margin-top: 2vw;
+    }
+
+    .input{
+       font-size: 3.3vw;
+       padding: 1vw 2vw;
+    }
+    .right-span button{
+        font-size: 3.3vw;
+        padding: 1vw 2vw;
+    }
+    .tasks{
+        width: 80%;
+    }
+    .task-span{
+        font-size: 3.3vw;
+        width: 80%;
+        padding: 1vw 2vw;
+    }
+    .task-action-span button{
+        font-size: 3.3vw;
+        padding: 1vw 2vw;
+    }
+    .task-action-span{
+        width: 20%;
+    }
+
+}
